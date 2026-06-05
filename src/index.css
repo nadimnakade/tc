@@ -12,8 +12,8 @@
     overflow-x: hidden;
   }
   ::selection {
-    background: #c89b3c;
-    color: #0c0b07;
+    background: #00d4ff;
+    color: #0a1929;
   }
 }
 
@@ -29,11 +29,11 @@
   .gradient-text {
     background: linear-gradient(
       110deg,
-      #e8c468 0%,
-      #c89b3c 25%,
-      #fde68a 50%,
-      #c89b3c 75%,
-      #9a7530 100%
+      #67e8f9 0%,
+      #00d4ff 25%,
+      #a5f3fc 50%,
+      #0891b2 75%,
+      #06b6d4 100%
     );
     background-size: 200% 200%;
     -webkit-background-clip: text;
@@ -62,8 +62,8 @@
     border-radius: inherit;
     background: linear-gradient(
       135deg,
-      rgba(200, 155, 60, 0.5),
-      rgba(45, 212, 191, 0.3)
+      rgba(0, 212, 255, 0.5),
+      rgba(26, 39, 68, 0.3)
     );
     -webkit-mask: linear-gradient(#000 0 0) content-box,
       linear-gradient(#000 0 0);
@@ -115,7 +115,7 @@
     background: linear-gradient(
       to right,
       transparent,
-      rgba(200, 155, 60, 0.3),
+      rgba(0, 212, 255, 0.3),
       transparent
     );
     height: 1px;

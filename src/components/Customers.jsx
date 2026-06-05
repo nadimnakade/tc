@@ -59,13 +59,13 @@ function LogoMark({ customer }) {
       href={`https://${customer.domain}`}
       target="_blank"
       rel="noreferrer"
-      className="group flex shrink-0 items-center gap-3 rounded-lg border border-white/5 bg-white/[0.02] px-4 py-2.5 transition-all hover:border-titan-gold/30 hover:bg-titan-gold/5"
+      className="group flex shrink-0 items-center gap-3 rounded-lg border border-white/5 bg-white/[0.02] px-4 py-2.5 transition-all hover:border-titan-cyan/30 hover:bg-titan-cyan/5"
     >
-      <span className="grid h-7 w-7 place-items-center rounded-md border border-white/10 bg-gradient-to-br from-titan-gold/30 to-titan-teal/20">
-        <span className="h-2.5 w-2.5 rounded-sm bg-gradient-to-br from-titan-gold-light to-titan-gold-dark" />
+      <span className="grid h-7 w-7 place-items-center rounded-md border border-white/10 bg-gradient-to-br from-titan-cyan/30 to-titan-navy/20">
+        <span className="h-2.5 w-2.5 rounded-sm bg-gradient-to-br from-titan-cyan to-titan-cyan-deep" />
       </span>
       <div className="flex flex-col leading-none">
-        <span className="font-display text-sm font-semibold tracking-tight text-ink-100 transition-colors group-hover:text-titan-gold-light">
+        <span className="font-display text-sm font-semibold tracking-tight text-ink-100 transition-colors group-hover:text-titan-cyan-light">
           {customer.name}
         </span>
         <span className="font-mono text-[9px] uppercase tracking-wider text-ink-500">

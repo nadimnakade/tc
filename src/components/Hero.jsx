@@ -77,7 +77,7 @@ function CursorBlob() {
         style={{ x: sx, y: sy }}
         className="absolute h-[600px] w-[600px] rounded-full"
       >
-        <div className="h-full w-full rounded-full bg-[radial-gradient(circle,rgba(200,155,60,0.20),rgba(45,212,191,0.08)_45%,transparent_75%)] blur-3xl" />
+        <div className="h-full w-full rounded-full bg-[radial-gradient(circle,rgba(0,212,255,0.20),rgba(26,39,68,0.08)_45%,transparent_75%)] blur-3xl" />
       </motion.div>
     </div>
   )
@@ -198,7 +198,7 @@ function ImageCard({ img, index, scrollYProgress }) {
         transition={{ delay: 0.2, duration: 0.6 }}
         className="absolute bottom-3 left-3 inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-black/40 px-2.5 py-1 text-[10px] font-medium text-white backdrop-blur-md"
       >
-        <span className="h-1.5 w-1.5 rounded-full bg-titan-gold-light" />
+        <span className="h-1.5 w-1.5 rounded-full bg-titan-cyan-light" />
         {img.label}
       </motion.div>
     </motion.div>
@@ -280,19 +280,19 @@ export default function Hero() {
         <CursorBlob />
         <Orb
           className="left-[-10%] top-[-10%] h-[480px] w-[480px] opacity-50"
-          color="radial-gradient(circle,#c89b3c,transparent 70%)"
+          color="radial-gradient(circle,#00d4ff,transparent 70%)"
           scrollYProgress={scrollYProgress}
           speed={160}
         />
         <Orb
           className="right-[-10%] top-[10%] h-[400px] w-[400px] opacity-40"
-          color="radial-gradient(circle,#2dd4bf,transparent 70%)"
+          color="radial-gradient(circle,#1a2744,transparent 70%)"
           scrollYProgress={scrollYProgress}
           speed={220}
         />
         <Orb
           className="bottom-[-10%] left-[30%] h-[500px] w-[500px] opacity-30"
-          color="radial-gradient(circle,#c2410c,transparent 70%)"
+          color="radial-gradient(circle,#4a6fa5,transparent 70%)"
           scrollYProgress={scrollYProgress}
           speed={280}
         />
@@ -326,7 +326,7 @@ export default function Hero() {
         >
           <motion.div
             style={{ scale: eyebrowScale }}
-            className="mx-auto inline-flex items-center gap-2 rounded-full border border-titan-gold/20 bg-titan-gold/5 px-3 py-1.5 text-xs text-titan-gold-light backdrop-blur"
+            className="mx-auto inline-flex items-center gap-2 rounded-full border border-titan-cyan/20 bg-titan-cyan/5 px-3 py-1.5 text-xs text-titan-cyan-light backdrop-blur"
           >
             <Sparkles className="h-3 w-3" />
             <span className="font-medium">Maltese Consultancy</span>
@@ -373,7 +373,7 @@ export default function Hero() {
               href="#contact"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
-              className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-titan-gold-light to-titan-gold px-6 py-3 text-sm font-semibold text-ink-950 shadow-[0_0_0_1px_rgba(232,196,104,0.3),0_10px_40px_-10px_rgba(200,155,60,0.6)]"
+              className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-titan-cyan to-titan-cyan-deep px-6 py-3 text-sm font-semibold text-ink-950 shadow-[0_0_0_1px_rgba(0,212,255,0.3),0_10px_40px_-10px_rgba(0,212,255,0.6)]"
             >
               <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/40 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
               Contact us
@@ -398,15 +398,15 @@ export default function Hero() {
           transition={{ delay: 1.8, duration: 0.6 }}
           onClick={handleScrollDown}
           aria-label="Scroll to next section"
-          className="group absolute bottom-8 left-1/2 z-20 -translate-x-1/2 flex flex-col items-center gap-2 text-xs text-ink-400 transition-colors hover:text-titan-gold-light"
+          className="group absolute bottom-8 left-1/2 z-20 -translate-x-1/2 flex flex-col items-center gap-2 text-xs text-ink-400 transition-colors hover:text-titan-cyan-light"
         >
           <span>Scroll to explore</span>
           <motion.div
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
-            className="h-9 w-5 rounded-full border border-white/20 p-1 transition-colors group-hover:border-titan-gold/50"
+            className="h-9 w-5 rounded-full border border-white/20 p-1 transition-colors group-hover:border-titan-cyan/50"
           >
-            <div className="h-1.5 w-full rounded-full bg-titan-gold/60" />
+            <div className="h-1.5 w-full rounded-full bg-titan-cyan/60" />
           </motion.div>
         </motion.button>
 
@@ -417,7 +417,7 @@ export default function Hero() {
         </div>
         <div className="pointer-events-none absolute right-6 top-6 z-10 hidden items-center gap-2 text-[10px] uppercase tracking-widest text-ink-500 md:flex">
           <span>est.</span>
-          <span className="font-mono text-titan-gold-light">20+</span>
+          <span className="font-mono text-titan-cyan-light">20+</span>
           <span>years</span>
         </div>
       </div>

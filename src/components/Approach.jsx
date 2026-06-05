@@ -11,7 +11,7 @@ const stages = [
     eyebrow: 'Discover',
     title: 'A comprehensive consult',
     body: 'We help identify gaps and opportunities — a deep-dive that frames the real problem before any solution is proposed.',
-    accent: 'from-titan-gold/40 to-titan-gold-dark/10',
+    accent: 'from-titan-cyan/40 to-titan-cyan-deep/10',
     items: ['Stakeholder mapping', 'Current-state audit', 'Opportunity sizing'],
   },
   {
@@ -38,7 +38,7 @@ const stages = [
     eyebrow: 'Empower',
     title: 'Tools to succeed',
     body: 'Our ramp-up process empowers your teams and outfits them with the tools your business needs to succeed — long after we go.',
-    accent: 'from-titan-gold/40 to-titan-teal/10',
+    accent: 'from-titan-cyan/40 to-titan-steel/10',
     items: ['Team enablement', 'Documentation', 'Knowledge transfer'],
   },
 ]
@@ -158,17 +158,17 @@ function StageArt({ stage }) {
           whileInView={{ scale: 1, rotate: 0 }}
           viewport={{ once: false }}
           transition={{ delay: 0.8, duration: 0.8, ease }}
-          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
         >
-          <div className="grid h-20 w-20 place-items-center rounded-full border-2 border-titan-gold-light/60 bg-gradient-to-br from-titan-gold/30 to-transparent backdrop-blur">
-            <Icon className="h-9 w-9 text-titan-gold-light" />
+          <div className="grid h-20 w-20 place-items-center rounded-full border-2 border-titan-cyan-light/60 bg-gradient-to-br from-titan-cyan/30 to-transparent backdrop-blur">
+            <Icon className="h-9 w-9 text-titan-cyan-light" />
           </div>
           <motion.div
             initial={{ scale: 0.6, opacity: 0 }}
             whileInView={{ scale: 1.6, opacity: [0, 0.4, 0] }}
             viewport={{ once: false }}
             transition={{ delay: 1.2, duration: 1.8, repeat: Infinity, ease: 'easeOut' }}
-            className="absolute inset-0 rounded-full border border-titan-gold-light/40"
+            className="absolute inset-0 rounded-full border border-titan-cyan-light/40"
           />
         </motion.div>
       </div>
@@ -231,9 +231,9 @@ function StageArt({ stage }) {
             />
           ))}
         </svg>
-        <div className="absolute right-4 top-4 rounded-md border border-titan-teal/30 bg-titan-teal/10 px-2 py-1 font-mono text-[10px] text-titan-teal">
-          v 1.0
-        </div>
+          <div className="absolute right-4 top-4 rounded-md border border-titan-cyan/30 bg-titan-cyan/10 px-2 py-1 font-mono text-[10px] text-titan-cyan-light">
+            v 1.0
+          </div>
       </div>
     )
   }
@@ -249,7 +249,7 @@ function StageArt({ stage }) {
               whileInView={{ height: `${h}%`, opacity: 1 }}
               viewport={{ once: false }}
               transition={{ delay: 0.4 + i * 0.05, duration: 0.6, ease }}
-              className="w-4 rounded-t-sm bg-gradient-to-t from-orange-500/60 to-titan-rust"
+              className="w-4 rounded-t-sm bg-gradient-to-t from-titan-cyan/60 to-titan-cyan-deep"
             />
           ))}
         </div>
@@ -258,7 +258,7 @@ function StageArt({ stage }) {
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: false }}
           transition={{ delay: 1.2, duration: 0.8, ease }}
-          className="absolute right-6 top-6 grid h-10 w-10 place-items-center rounded-full bg-gradient-to-br from-titan-rust to-orange-500 shadow-lg"
+          className="absolute right-6 top-6 grid h-10 w-10 place-items-center rounded-full bg-gradient-to-br from-titan-cyan to-titan-cyan-deep shadow-lg"
         >
           <Rocket className="h-5 w-5 text-white" />
         </motion.div>
@@ -276,7 +276,7 @@ function StageArt({ stage }) {
               cx="100"
               cy="100"
               r={20 + i * 15}
-              stroke="rgba(232,196,104,0.4)"
+              stroke="rgba(0,212,255,0.4)"
               strokeWidth="1"
               fill="none"
               initial={{ pathLength: 0, opacity: 0 }}
@@ -287,7 +287,7 @@ function StageArt({ stage }) {
           ))}
           <motion.path
             d="M 60 100 Q 100 60 140 100 Q 100 140 60 100 Z"
-            fill="rgba(45,212,191,0.3)"
+            fill="rgba(0,212,255,0.3)"
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
             viewport={{ once: false }}
@@ -297,7 +297,7 @@ function StageArt({ stage }) {
             cx="100"
             cy="100"
             r="6"
-            fill="#e8c468"
+            fill="#67e8f9"
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
             viewport={{ once: false }}
@@ -310,7 +310,7 @@ function StageArt({ stage }) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false }}
         transition={{ delay: 1.5 }}
-        className="absolute bottom-4 left-4 rounded-md border border-titan-gold/30 bg-titan-gold/10 px-2 py-1 font-mono text-[10px] text-titan-gold-light"
+        className="absolute bottom-4 left-4 rounded-md border border-titan-cyan/30 bg-titan-cyan/10 px-2 py-1 font-mono text-[10px] text-titan-cyan-light"
       >
         +247% capacity
       </motion.div>
@@ -351,7 +351,7 @@ function Stage({ stage, index, total, scrollYProgress }) {
     >
       <div>
         <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-ink-200">
-          <Icon className="h-3 w-3 text-titan-gold-light" />
+              <Icon className="h-3 w-3 text-titan-cyan-light" />
           {stage.eyebrow}
           <span className="ml-1 font-mono text-ink-500">— step {stage.n}</span>
         </div>
@@ -387,7 +387,7 @@ export default function Approach() {
     >
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <div className="pointer-events-none absolute inset-0 -z-10">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(200,155,60,0.10),transparent_60%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,212,255,0.10),transparent_60%)]" />
           <div className="absolute inset-0 bg-grid-light bg-grid-32 mask-fade-b opacity-30" />
         </div>
 
@@ -424,7 +424,7 @@ export default function Approach() {
             <div className="h-1 flex-1 overflow-hidden rounded-full bg-white/10">
               <motion.div
                 style={{ width: progressWidth }}
-                className="h-full bg-gradient-to-r from-titan-gold-dark via-titan-gold to-titan-teal"
+                className="h-full bg-gradient-to-r from-titan-cyan-deep via-titan-cyan to-titan-steel"
               />
             </div>
             <div className="font-mono text-xs text-ink-500">

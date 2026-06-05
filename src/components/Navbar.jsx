@@ -49,9 +49,10 @@ export default function Navbar() {
       >
         <a href="#" className="group flex items-center gap-2.5">
           <div className="relative">
-            <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-titan-gold-light to-titan-gold-dark opacity-80 blur-md transition-opacity group-hover:opacity-100" />
-            <div className="relative grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-titan-gold-light to-titan-gold-dark">
-              <span className="font-display text-lg font-bold text-ink-950">T</span>
+            <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-titan-cyan to-titan-cyan-deep opacity-80 blur-md transition-opacity group-hover:opacity-100" />
+            <div className="relative grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-titan-cyan to-titan-cyan-deep">
+              {/* <span className="font-display text-lg font-bold text-ink-950">T</span> */}
+              <img src="https://img1.wsimg.com/isteam/ip/44d39969-cf87-41c5-84b3-fac279d906ab/Titan-Consultancy_Logo%20-%20No%20tagline-49f702f.svg/:/rs=w:470,h:398,cg:true,m/cr=w:470,h:398/qt=q:95" alt="Titan Logo" className="h-5 w-5" />
             </div>
           </div>
           <div className="flex flex-col leading-none">
@@ -125,7 +126,7 @@ export default function Navbar() {
             href="#contact"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
-            className="group inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-titan-gold-light to-titan-gold px-4 py-2 text-sm font-medium text-ink-950 shadow-[0_0_0_1px_rgba(232,196,104,0.3),0_8px_30px_-8px_rgba(200,155,60,0.6)] transition-shadow hover:shadow-[0_0_30px_-5px_rgba(232,196,104,0.6)]"
+            className="group inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-titan-cyan to-titan-cyan-deep px-4 py-2 text-sm font-medium text-ink-950 shadow-[0_0_0_1px_rgba(0,212,255,0.3),0_8px_30px_-8px_rgba(0,212,255,0.6)] transition-shadow hover:shadow-[0_0_30px_-5px_rgba(0,212,255,0.6)]"
           >
             Let's talk
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -163,7 +164,7 @@ export default function Navbar() {
               <a
                 href="#contact"
                 onClick={() => setOpen(false)}
-                className="mt-2 rounded-lg bg-gradient-to-r from-titan-gold-light to-titan-gold px-3 py-2 text-center text-sm font-medium text-ink-950"
+                className="mt-2 rounded-lg bg-gradient-to-r from-titan-cyan to-titan-cyan-deep px-3 py-2 text-center text-sm font-medium text-ink-950"
               >
                 Let's talk
               </a>

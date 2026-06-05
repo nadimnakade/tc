@@ -38,7 +38,7 @@ function Counter({ value, suffix = '', decimals = 0 }) {
 export default function Stats() {
   return (
     <section className="relative border-y border-white/5 bg-gradient-to-b from-ink-950/40 via-ink-900/40 to-ink-950/40 py-20">
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,rgba(200,155,60,0.10),transparent_60%)]" />
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,rgba(0,212,255,0.10),transparent_60%)]" />
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
           {stats.map((s, i) => (

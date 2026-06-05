@@ -48,18 +48,18 @@ export default function Contact() {
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.8, ease }}
           style={{ rotateX, rotateY, transformStyle: 'preserve-3d', transformPerspective: 1000 }}
-          className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-ink-900 via-ink-950 to-ink-900 p-8 shadow-[0_30px_120px_-20px_rgba(200,155,60,0.4)] sm:p-12"
+          className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-ink-900 via-ink-950 to-ink-900 p-8 shadow-[0_30px_120px_-20px_rgba(0,212,255,0.4)] sm:p-12"
         >
           <div className="pointer-events-none absolute inset-0">
-            <div className="absolute -left-20 -top-20 h-80 w-80 rounded-full bg-titan-gold/20 blur-3xl" />
-            <div className="absolute -bottom-20 -right-20 h-80 w-80 rounded-full bg-titan-teal/15 blur-3xl" />
+            <div className="absolute -left-20 -top-20 h-80 w-80 rounded-full bg-titan-cyan/20 blur-3xl" />
+            <div className="absolute -bottom-20 -right-20 h-80 w-80 rounded-full bg-titan-navy/15 blur-3xl" />
             <div className="absolute inset-0 bg-grid-light bg-grid-32 opacity-20" />
           </div>
           <div className="noise" />
 
           <div className="relative grid gap-10 md:grid-cols-2 md:gap-16">
             <div>
-              <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-titan-gold/20 bg-titan-gold/5 px-3 py-1 text-xs text-titan-gold-light">
+              <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-titan-cyan/20 bg-titan-cyan/5 px-3 py-1 text-xs text-titan-cyan-light">
                 <Sparkles className="h-3 w-3" />
                 Drop us a line
               </div>
@@ -78,8 +78,8 @@ export default function Contact() {
                   href="mailto:letstalk@titan-consultancy.com"
                   className="group flex items-center gap-3 rounded-xl border border-white/5 bg-white/[0.03] p-3 transition-colors hover:bg-white/[0.06]"
                 >
-                  <span className="grid h-10 w-10 place-items-center rounded-lg border border-titan-gold/20 bg-titan-gold/10">
-                    <Mail className="h-4 w-4 text-titan-gold-light" />
+                  <span className="grid h-10 w-10 place-items-center rounded-lg border border-titan-cyan/20 bg-titan-cyan/10">
+                    <Mail className="h-4 w-4 text-titan-cyan-light" />
                   </span>
                   <div>
                     <div className="text-[10px] uppercase tracking-widest text-ink-400">
@@ -91,8 +91,8 @@ export default function Contact() {
                   </div>
                 </a>
                 <div className="flex items-center gap-3 rounded-xl border border-white/5 bg-white/[0.03] p-3">
-                  <span className="grid h-10 w-10 place-items-center rounded-lg border border-titan-teal/20 bg-titan-teal/10">
-                    <MapPin className="h-4 w-4 text-titan-teal" />
+                  <span className="grid h-10 w-10 place-items-center rounded-lg border border-titan-cyan/20 bg-titan-cyan/10">
+                    <MapPin className="h-4 w-4 text-titan-cyan-light" />
                   </span>
                   <div>
                     <div className="text-[10px] uppercase tracking-widest text-ink-400">
@@ -128,7 +128,7 @@ export default function Contact() {
                   value={form.message}
                   onChange={(e) => setForm({ ...form, message: e.target.value })}
                   placeholder="Tell us what you're working on..."
-                  className="w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-white placeholder:text-ink-500 transition-colors focus:border-titan-gold/40 focus:outline-none"
+                  className="w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-white placeholder:text-ink-500 transition-colors focus:border-titan-cyan/40 focus:outline-none"
                 />
               </div>
 
@@ -137,7 +137,7 @@ export default function Contact() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 disabled={sent}
-                className="group relative inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-titan-gold-light to-titan-gold px-6 py-3.5 text-sm font-semibold text-ink-950 shadow-[0_0_0_1px_rgba(232,196,104,0.3),0_10px_40px_-10px_rgba(200,155,60,0.6)] disabled:opacity-80"
+                className="group relative inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-titan-cyan to-titan-cyan-deep px-6 py-3.5 text-sm font-semibold text-ink-950 shadow-[0_0_0_1px_rgba(0,212,255,0.3),0_10px_40px_-10px_rgba(0,212,255,0.6)] disabled:opacity-80"
               >
                 <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/40 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
                 {sent ? (
@@ -169,7 +169,7 @@ export default function Contact() {
           className="mt-10 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] backdrop-blur"
         >
           <div className="flex items-center gap-3 border-b border-white/5 px-6 py-4">
-            <Clock className="h-4 w-4 text-titan-gold-light" />
+            <Clock className="h-4 w-4 text-titan-cyan-light" />
             <h3 className="font-display text-lg font-semibold tracking-tight text-white">
               Opening hours
             </h3>
@@ -211,7 +211,7 @@ function Field({ label, value, onChange, type = 'text', required, placeholder })
     <div>
       <label className="mb-1.5 block text-xs font-medium uppercase tracking-widest text-ink-300">
         {label}
-        {required && <span className="ml-1 text-titan-gold">*</span>}
+        {required && <span className="ml-1 text-titan-cyan">*</span>}
       </label>
       <input
         type={type}
@@ -219,7 +219,7 @@ function Field({ label, value, onChange, type = 'text', required, placeholder })
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
-        className="w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-white placeholder:text-ink-500 transition-colors focus:border-titan-gold/40 focus:outline-none"
+        className="w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-white placeholder:text-ink-500 transition-colors focus:border-titan-cyan/40 focus:outline-none"
       />
     </div>
   )

@@ -30,7 +30,7 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
           <div>
             <a href="#" className="flex items-center gap-2.5">
-              <div className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-titan-gold-light to-titan-gold-dark">
+              <div className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-titan-cyan to-titan-cyan-deep">
                 <span className="font-display text-lg font-bold text-ink-950">
                   T
                 </span>
@@ -53,7 +53,7 @@ export default function Footer() {
                   key={i}
                   href="#"
                   whileHover={{ y: -2, scale: 1.05 }}
-                  className="grid h-9 w-9 place-items-center rounded-full border border-white/10 bg-white/5 text-ink-300 transition-colors hover:border-titan-gold/30 hover:text-titan-gold-light"
+                  className="grid h-9 w-9 place-items-center rounded-full border border-white/10 bg-white/5 text-ink-300 transition-colors hover:border-titan-cyan/30 hover:text-titan-cyan-light"
                 >
                   <Icon className="h-4 w-4" />
                 </motion.a>
@@ -71,7 +71,7 @@ export default function Footer() {
                   <li key={l}>
                     <a
                       href="#"
-                      className="text-ink-300 transition-colors hover:text-titan-gold-light"
+                      className="text-ink-300 transition-colors hover:text-titan-cyan-light"
                     >
                       {l}
                     </a>
@@ -96,13 +96,13 @@ export default function Footer() {
             reserved.
           </span>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-titan-gold-light">
+            <a href="#" className="hover:text-titan-cyan-light">
               Privacy
             </a>
-            <a href="#" className="hover:text-titan-gold-light">
+            <a href="#" className="hover:text-titan-cyan-light">
               Terms
             </a>
-            <a href="#" className="hover:text-titan-gold-light">
+            <a href="#" className="hover:text-titan-cyan-light">
               Cookies
             </a>
           </div>

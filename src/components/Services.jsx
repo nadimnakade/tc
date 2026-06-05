@@ -28,7 +28,7 @@ const services = [
     ],
     icon: Cpu,
     className: 'md:col-span-3 md:row-span-2',
-    accent: 'from-titan-gold/30 to-titan-gold-dark/10',
+    accent: 'from-titan-cyan/30 to-titan-cyan-deep/10',
     visual: 'it',
   },
   {
@@ -53,7 +53,7 @@ const services = [
       'Access world-class software engineers for IT projects or product acceleration.',
     icon: Users,
     className: 'md:col-span-2',
-    accent: 'from-titan-gold/20 to-titan-gold-dark/10',
+    accent: 'from-titan-cyan/20 to-titan-cyan-deep/10',
   },
   {
     title: 'Digital Marketing',
@@ -77,7 +77,7 @@ const services = [
       'User research, wireframing, prototyping and visual design for new and existing products.',
     icon: Layers,
     className: 'md:col-span-3',
-    accent: 'from-titan-gold/20 to-titan-teal/10',
+    accent: 'from-titan-cyan/20 to-titan-steel/10',
   },
   {
     title: 'Business Analysis & BPR',
@@ -85,7 +85,7 @@ const services = [
       'Re-engineer processes for competitive advantage — reduce overhead, improve customer experience.',
     icon: LineChart,
     className: 'md:col-span-3',
-    accent: 'from-titan-teal/20 to-titan-rust/10',
+    accent: 'from-titan-steel/20 to-titan-cyan/10',
   },
   {
     title: 'Custom Software',
@@ -93,7 +93,7 @@ const services = [
       'Mission-critical web & software projects in C, C++, C#, Java and beyond — flexible, on time, on budget.',
     icon: Code2,
     className: 'md:col-span-3',
-    accent: 'from-titan-rust/20 to-titan-gold/10',
+    accent: 'from-titan-steel/20 to-titan-cyan/10',
   },
   {
     title: 'Project & Product Management',
@@ -101,7 +101,7 @@ const services = [
       'Coherent specifications through the full lifecycle — repeat clients, proudly delivered.',
     icon: Briefcase,
     className: 'md:col-span-3',
-    accent: 'from-titan-gold/20 to-titan-rust/10',
+    accent: 'from-titan-cyan/20 to-titan-steel/10',
   },
 ]
 
@@ -116,14 +116,14 @@ function ITVisual() {
       </div>
       <div className="space-y-1.5">
         {[
-          { c: 'text-titan-gold', t: '$ discover' },
+          { c: 'text-titan-cyan', t: '$ discover' },
           { c: 'text-ink-300', t: '  ↳ map stakeholders' },
           { c: 'text-ink-300', t: '  ↳ audit systems' },
-          { c: 'text-titan-gold', t: '$ plan' },
+          { c: 'text-titan-cyan', t: '$ plan' },
           { c: 'text-ink-300', t: '  ↳ architecture' },
           { c: 'text-ink-300', t: '  ↳ cost & timeline' },
-          { c: 'text-titan-teal', t: '✓ no hidden costs' },
-          { c: 'text-titan-teal', t: '✓ senior on every call' },
+          { c: 'text-titan-cyan', t: '✓ no hidden costs' },
+          { c: 'text-titan-cyan', t: '✓ senior on every call' },
         ].map((line, i) => (
           <motion.div
             key={i}
@@ -161,9 +161,9 @@ function Card({ service, i }) {
       <div className="relative flex h-full flex-col">
         <div className="flex items-start justify-between">
           <div className="grid h-10 w-10 place-items-center rounded-xl border border-white/10 bg-white/5">
-            <Icon className="h-5 w-5 text-titan-gold-light" />
+            <Icon className="h-5 w-5 text-titan-cyan-light" />
           </div>
-          <ArrowUpRight className="h-4 w-4 text-ink-500 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-titan-gold-light" />
+          <ArrowUpRight className="h-4 w-4 text-ink-500 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-titan-cyan-light" />
         </div>
         <h3 className="mt-5 font-display text-xl font-semibold tracking-tight text-white sm:text-2xl">
           {service.title}
@@ -174,7 +174,7 @@ function Card({ service, i }) {
           <ul className="mt-4 space-y-1.5 text-xs text-ink-300">
             {service.points.map((p) => (
               <li key={p} className="flex items-center gap-2">
-                <span className="h-1 w-1 rounded-full bg-titan-gold" />
+                <span className="h-1 w-1 rounded-full bg-titan-cyan" />
                 {p}
               </li>
             ))}
@@ -191,7 +191,7 @@ export default function Services() {
   return (
     <section id="services" className="relative py-24 sm:py-32">
       <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute left-1/2 top-1/4 h-96 w-96 -translate-x-1/2 rounded-full bg-titan-gold/8 blur-3xl" />
+        <div className="absolute left-1/2 top-1/4 h-96 w-96 -translate-x-1/2 rounded-full bg-titan-cyan/8 blur-3xl" />
       </div>
       <div className="mx-auto max-w-6xl px-6">
         <motion.div

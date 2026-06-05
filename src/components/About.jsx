@@ -46,7 +46,7 @@ export default function About() {
               <span className="gradient-text">Titan Consultancy</span>, a
               Maltese company with
               <br />
-              <span className="italic text-titan-gold-light">20+ years</span> of
+              <span className="italic text-titan-cyan-light">20+ years</span> of
               service.
             </h2>
           </motion.div>
@@ -70,7 +70,7 @@ export default function About() {
             <div className="pt-2">
               <a
                 href="mailto:letstalk@titan-consultancy.com?subject=I%20would%20like%20to%20know%20more%20about...&body=Hi%2C%20%0A%0AI%20would%20like%20to%20know%20more%20about..."
-                className="group inline-flex items-center gap-2 rounded-full border border-titan-gold/30 bg-titan-gold/5 px-4 py-2 text-sm text-titan-gold-light transition-colors hover:bg-titan-gold/10"
+                className="group inline-flex items-center gap-2 rounded-full border border-titan-cyan/30 bg-titan-cyan/5 px-4 py-2 text-sm text-titan-cyan-light transition-colors hover:bg-titan-cyan/10"
               >
                 <span>Get in touch</span>
                 <span className="transition-transform group-hover:translate-x-0.5">→</span>
@@ -92,10 +92,10 @@ export default function About() {
                 whileHover={{ y: -4 }}
                 className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] p-6 backdrop-blur transition-colors hover:bg-white/[0.04]"
               >
-                <div className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full bg-gradient-to-br from-titan-gold/20 to-titan-teal/10 opacity-50 blur-2xl transition-opacity group-hover:opacity-100" />
+                <div className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full bg-gradient-to-br from-titan-cyan/20 to-titan-steel/10 opacity-50 blur-2xl transition-opacity group-hover:opacity-100" />
                 <div className="relative">
                   <div className="grid h-10 w-10 place-items-center rounded-xl border border-white/10 bg-white/5">
-                    <Icon className="h-5 w-5 text-titan-gold-light" />
+                    <Icon className="h-5 w-5 text-titan-cyan-light" />
                   </div>
                   <h3 className="mt-5 font-display text-xl font-semibold tracking-tight text-white">
                     {p.title}

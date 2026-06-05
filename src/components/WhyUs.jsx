@@ -9,7 +9,7 @@ const pillars = [
     tag: 'Expertise',
     title: 'Specialists, not generalists',
     body: 'We are experts in digital marketing, data management, data interchange and integration software, and analytical and decision support software.',
-    accent: 'from-titan-gold/30 to-titan-gold-dark/10',
+    accent: 'from-titan-cyan/30 to-titan-cyan-deep/10',
   },
   {
     icon: Award,
@@ -30,7 +30,7 @@ const pillars = [
     tag: 'Culture',
     title: 'Time and guidance',
     body: 'We want to give each of you the time and guidance they deserve. We didn\u2019t get there alone... and neither will you.',
-    accent: 'from-titan-gold/30 to-titan-teal/10',
+    accent: 'from-titan-cyan/30 to-titan-steel/10',
   },
 ]
 
@@ -75,9 +75,9 @@ export default function WhyUs() {
                 <div className="relative flex h-full flex-col">
                   <div className="flex items-center gap-3">
                     <div className="grid h-11 w-11 place-items-center rounded-xl border border-white/10 bg-white/5">
-                      <Icon className="h-5 w-5 text-titan-gold-light" />
+                      <Icon className="h-5 w-5 text-titan-cyan-light" />
                     </div>
-                    <span className="font-mono text-xs uppercase tracking-[0.2em] text-titan-gold-light">
+                    <span className="font-mono text-xs uppercase tracking-[0.2em] text-titan-cyan-light">
                       {p.tag}
                     </span>
                   </div>
